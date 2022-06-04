@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> la liste des 10 derniers restaurants créés </h1>
+    <div>
+        {% for restaurant in restaurants %}
+            <div>
+                <span> <b>name:</b>  {{ restaurant.restaurantName }}</span>
+                <span> <b>date creation :</b> {{ restaurant.createAt.date|date("m/d/Y")  }}</span>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
