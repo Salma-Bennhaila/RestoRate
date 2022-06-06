@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> Details de restaurant {{ restaurant.restaurantName }}  </h1>
+    <div>
+        <span><b>id : </b> {{ restaurant.restaurantId }}</span><br>
+        <span><b>Name : </b> {{ restaurant.restaurantName }}</span><br>
+        <span><b>Date Création : </b> {{ restaurant.createAt.date }}</span><br>
+        <span><b>Date Modification : </b> {{ restaurant.updateAt.date }}</span><br>
+        <span><b>City : </b> {{ restaurant.cityId.cityName }}</span><br>
+        <span><b>userName : </b> {{ restaurant.userId.username }}</span><br>
+    </div>
+{% endblock %}

@@ -25,10 +25,9 @@ class LoginController extends AbstractController
         $data = $request->request->all();
         $user = $this->getDoctrine()->getRepository(User::class)->findOneBy(['username'=>$data['username']]); /** @var User $user */
         if($user->getUserRole() == 'restaurateur'){
-            return $this->render('user/login.html.twig');
-        }else{
-            return $this->render('user/login.html.twig');
+            return $this->redirectToRoute('get_all_restau');
         }
+
     }
 
 

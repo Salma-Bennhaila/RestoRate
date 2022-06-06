@@ -19,9 +19,28 @@ class RestaurantRepository extends ServiceEntityRepository
      */
     public function findRestaurant(): array
     {
-        $query =  $this->createQueryBuilder('c')
-            ->orderBy('c.createAt','ASC')
+        $query =  $this->createQueryBuilder('R')
+            ->orderBy('R.createAt','ASC')
             ->setMaxResults(10)
+            ->getQuery()
+            ->getResult()
+            ;
+        // returns an array of restaurant objects
+        return $query;
+    }
+
+
+    /**
+     * @param $city string
+     * @return restaurant[]
+     */
+    public function findRestaurantByCity($city): array
+    {
+        $query =  $this->createQueryBuilder('R')
+            ->select('R','C')
+            ->leftJoin('R.cityId','C')
+            ->where('C.cityName =:city')
+            ->setParameter('city',$city)
             ->getQuery()
             ->getResult()
             ;

@@ -3,12 +3,13 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ReviewsRepository;
 
 /**
  * Reviews
  *
  * @ORM\Table(name="reviews", indexes={@ORM\Index(name="resraurant_id", columns={"resraurant_id"}), @ORM\Index(name="user_id", columns={"user_id"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass=ReviewsRepository::class)
  */
 class Reviews
 {
@@ -36,16 +37,23 @@ class Reviews
     private $note;
 
     /**
-     * @var int
+     * @var Restaurant
      *
-     * @ORM\Column(name="resraurant_id", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="Restaurant")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="resraurant_id", referencedColumnName="restaurant_id")
+     * })*
      */
     private $resraurantId;
 
     /**
-     * @var int
+     * @var User
      *
-     * @ORM\Column(name="user_id", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="user_id", referencedColumnName="user_id")
+     * })
+     *
      */
     private $userId;
 
@@ -78,29 +86,42 @@ class Reviews
         return $this;
     }
 
-    public function getResraurantId(): ?int
+    /**
+     * @return Restaurant
+     */
+    public function getResraurantId(): Restaurant
     {
         return $this->resraurantId;
     }
 
-    public function setResraurantId(int $resraurantId): self
+    /**
+     * @param Restaurant $resraurantId
+     * @return Reviews
+     */
+    public function setResraurantId(Restaurant $resraurantId): Reviews
     {
         $this->resraurantId = $resraurantId;
-
         return $this;
     }
 
-    public function getUserId(): ?int
+    /**
+     * @return User
+     */
+    public function getUserId(): User
     {
         return $this->userId;
     }
 
-    public function setUserId(int $userId): self
+    /**
+     * @param User $userId
+     * @return Reviews
+     */
+    public function setUserId(User $userId): Reviews
     {
         $this->userId = $userId;
-
         return $this;
     }
+
 
 
 }

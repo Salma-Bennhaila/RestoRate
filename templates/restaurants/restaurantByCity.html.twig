@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if restaurants|length == 0 %}
+        <h1> la liste des restaurants by {{ city}} est vide </h1>
+    {% else %}
+        <h1> la liste des restaurants by {{ city}} </h1>
+        <div>
+        {% for restaurant in restaurants %}
+            <div>
+                <span> <b>name:</b>  {{ restaurant.restaurantName }}</span>
+                <span> <b>city :</b> {{ restaurant.cityId.cityName  }}</span>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endblock %}

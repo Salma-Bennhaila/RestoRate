@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+        <h1> la note des restaurants  </h1>
+        {% for key, moyenne in moyennes %}
+            <div>
+                <span> La moyenne de <b>{{ key}} </b> est <b>{{ moyenne }}</b></span>
+            </div>
+        {% endfor %}
+{% endblock %}

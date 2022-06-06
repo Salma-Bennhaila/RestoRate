@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> la liste des restaurants créés </h1>
+    <div>
+        <table>
+            <tr>
+                <th>Nom Rest</th>
+                <th>Date Creation</th>
+                <th>Date Modification</th>
+                <th>Ville </th>
+                <th>Utilisateur</th>
+                <th>Action</th>
+            </tr>
+            {% for restaurants in restaurants %}
+                <tr>
+                    <td>{{ restaurant.restaurantId }}</td>
+                    <td>{{ restaurant.restaurantName }}</td>
+                    <td>{{ restaurant.createAt.date }}</td>
+                    <td> {{ restaurant.updateAt.date }}</td>
+                    <td>{{ restaurant.cityId.cityName }}</td>
+                    <td> {{ restaurant.userId.username }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}
