@@ -63,7 +63,7 @@ class RestaurantController extends AbstractController
     }
 
     /**
-     * @Route("/restaurant/getRestaurantAll", name="get_all_restau")
+     * @Route("/getRestaurantAll", name="get_all_restau")
      */
     public function getAll():Response{
         $restaurants = $this->getDoctrine()->getRepository(Restaurant::class)->findAll(); /** @var  $restaurants */

@@ -5,6 +5,7 @@
     <div>
         <table>
             <tr>
+                <th>id Rest</th>
                 <th>Nom Rest</th>
                 <th>Date Creation</th>
                 <th>Date Modification</th>
@@ -12,12 +13,12 @@
                 <th>Utilisateur</th>
                 <th>Action</th>
             </tr>
-            {% for restaurants in restaurants %}
+            {% for restaurant in restaurants %}
                 <tr>
                     <td>{{ restaurant.restaurantId }}</td>
                     <td>{{ restaurant.restaurantName }}</td>
-                    <td>{{ restaurant.createAt.date }}</td>
-                    <td> {{ restaurant.updateAt.date }}</td>
+                    <td>{{ restaurant.createAt.date|date("m/d/Y") }}</td>
+                    <td> {{ restaurant.updateAt.date|date("m/d/Y") }}</td>
                     <td>{{ restaurant.cityId.cityName }}</td>
                     <td> {{ restaurant.userId.username }}</td>
                 </tr>
