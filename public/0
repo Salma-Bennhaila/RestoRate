@@ -32965,3 +32965,1635 @@ WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = '
 
 [08-Jun-2022 23:28:56 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
 
+[08-Jun-2022 23:38:15 UTC] [info] Matched route "init_add".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:38:15 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:38:15 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:38:15 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:38:15 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:38:15 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:38:15 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:38:15 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:38:15 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:15 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:38:16 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:38:16 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:38:58 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:38:58 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:38:58 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:42:31 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:42:31 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:31 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:42:32 UTC] [debug] "START TRANSACTION"
+
+[08-Jun-2022 23:42:32 UTC] [debug] INSERT INTO user (email, user_name, roles, password, create_at, update_at) VALUES (?, ?, ?, ?, ?, ?)
+
+[08-Jun-2022 23:42:32 UTC] [debug] "ROLLBACK"
+
+[08-Jun-2022 23:42:32 UTC] [critical] Uncaught PHP Exception Doctrine\DBAL\Exception\NotNullConstraintViolationException: "An exception occurred while executing 'INSERT INTO user (email, user_name, roles, password, create_at, update_at) VALUES (?, ?, ?, ?, ?, ?)' with params ["clientName@gmail.com", "clientName", "[\"ROLE_CLIENT\"]", "salma123", null, null]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'create_at' ne peut être vide (null)" at C:\wamp64\www\RestoRate\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php line 125
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:42:32 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:42:32 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:42:32 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:42:32 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:42:32 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:42:32 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:42:32 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:42:32 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:32 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:33 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:42:57 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:42:57 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:42:57 UTC] [debug] "START TRANSACTION"
+
+[08-Jun-2022 23:42:57 UTC] [debug] INSERT INTO user (email, user_name, roles, password, create_at, update_at) VALUES (?, ?, ?, ?, ?, ?)
+
+[08-Jun-2022 23:42:57 UTC] [debug] "ROLLBACK"
+
+[08-Jun-2022 23:42:57 UTC] [critical] Uncaught PHP Exception Doctrine\DBAL\Exception\NotNullConstraintViolationException: "An exception occurred while executing 'INSERT INTO user (email, user_name, roles, password, create_at, update_at) VALUES (?, ?, ?, ?, ?, ?)' with params ["clientName@gmail.com", "clientName", "[\"ROLE_CLIENT\"]", "salma123", "2022-06-08", null]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'update_at' ne peut être vide (null)" at C:\wamp64\www\RestoRate\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php line 125
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:57 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:42:58 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:42:58 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:42:58 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:42:58 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:42:58 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:42:58 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:42:58 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:42:58 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:42:58 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:43:16 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:43:16 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:43:16 UTC] [debug] "START TRANSACTION"
+
+[08-Jun-2022 23:43:16 UTC] [debug] INSERT INTO user (email, user_name, roles, password, create_at, update_at) VALUES (?, ?, ?, ?, ?, ?)
+
+[08-Jun-2022 23:43:16 UTC] [debug] "COMMIT"
+
+[08-Jun-2022 23:43:16 UTC] [critical] Uncaught PHP Exception Twig\Error\RuntimeError: "Variable "last_username" does not exist." at C:\wamp64\www\RestoRate\templates\user\login.html.twig line 8
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:43:16 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:43:16 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:43:16 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:43:16 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:43:16 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:43:16 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:43:16 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:16 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:43:17 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:17 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:43:48 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:43:48 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:43:48 UTC] [debug] "START TRANSACTION"
+
+[08-Jun-2022 23:43:48 UTC] [debug] INSERT INTO user (email, user_name, roles, password, create_at, update_at) VALUES (?, ?, ?, ?, ?, ?)
+
+[08-Jun-2022 23:43:48 UTC] [debug] "ROLLBACK"
+
+[08-Jun-2022 23:43:48 UTC] [critical] Uncaught PHP Exception Doctrine\DBAL\Exception\UniqueConstraintViolationException: "An exception occurred while executing 'INSERT INTO user (email, user_name, roles, password, create_at, update_at) VALUES (?, ?, ?, ?, ?, ?)' with params ["clientName@gmail.com", "clientName", "[\"ROLE_CLIENT\"]", "salma123", "2022-06-08", "2022-06-08"]:
+
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ 'clientName@gmail.com' pour la clef 'UNIQ_8D93D649E7927C74'" at C:\wamp64\www\RestoRate\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractMySQLDriver.php line 74
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:43:48 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:43:48 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:43:48 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:43:48 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:43:48 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:43:48 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:43:48 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:48 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:43:49 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:43:49 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:47:51 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:47:51 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:47:51 UTC] [critical] Uncaught PHP Exception ErrorException: "Notice: Undefined index: _password" at C:\wamp64\www\RestoRate\src\Controller\LoginController.php line 59
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:47:51 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:47:51 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:47:51 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:47:51 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:47:51 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:47:51 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:47:51 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:51 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:47:52 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:52 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:47:57 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:47:57 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:48:04 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:48:04 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:48:04 UTC] [critical] Uncaught PHP Exception ErrorException: "Notice: Undefined index: _password" at C:\wamp64\www\RestoRate\src\Controller\LoginController.php line 59
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:48:04 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:48:04 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:48:04 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:48:04 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:48:04 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:48:04 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:48:04 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:48:04 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:04 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:48:24 UTC] [info] Matched route "add_user".
+
+[08-Jun-2022 23:48:24 UTC] [info] Populated the TokenStorage with an anonymous Token.
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:48:24 UTC] [debug] SELECT t0.id AS id_1, t0.email AS email_2, t0.user_name AS user_name_3, t0.roles AS roles_4, t0.password AS password_5, t0.create_at AS create_at_6, t0.update_at AS update_at_7 FROM user t0 WHERE t0.email = ? LIMIT 1
+
+[08-Jun-2022 23:48:24 UTC] [critical] Uncaught PHP Exception Exception: "Email Exist clientName@gmail.com" at C:\wamp64\www\RestoRate\src\Controller\LoginController.php line 61
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:48:24 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:48:24 UTC] [debug] SHOW FULL TABLES WHERE Table_type = 'BASE TABLE'
+
+[08-Jun-2022 23:48:24 UTC] [debug] SELECT COLUMN_NAME AS Field, COLUMN_TYPE AS Type, IS_NULLABLE AS `Null`, COLUMN_KEY AS `Key`, COLUMN_DEFAULT AS `Default`, EXTRA AS Extra, COLUMN_COMMENT AS Comment, CHARACTER_SET_NAME AS CharacterSet, COLLATION_NAME AS Collation FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = 'resto_rate' AND TABLE_NAME = 'doctrine_migration_versions' ORDER BY ORDINAL_POSITION ASC
+
+[08-Jun-2022 23:48:24 UTC] [debug] SELECT DISTINCT k.`CONSTRAINT_NAME`, k.`COLUMN_NAME`, k.`REFERENCED_TABLE_NAME`, k.`REFERENCED_COLUMN_NAME` /*!50116 , c.update_rule, c.delete_rule */ FROM information_schema.key_column_usage k /*!50116 INNER JOIN information_schema.referential_constraints c ON   c.constraint_name = k.constraint_name AND   c.table_name = 'doctrine_migration_versions' */ WHERE k.table_name = 'doctrine_migration_versions' AND k.table_schema = 'resto_rate' /*!50116 AND c.constraint_schema = 'resto_rate' */ AND k.`REFERENCED_COLUMN_NAME` is not NULL
+
+[08-Jun-2022 23:48:24 UTC] [debug] SELECT NON_UNIQUE AS Non_Unique, INDEX_NAME AS Key_name, COLUMN_NAME AS Column_Name, SUB_PART AS Sub_Part, INDEX_TYPE AS Index_Type FROM information_schema.STATISTICS WHERE TABLE_NAME = 'doctrine_migration_versions' AND TABLE_SCHEMA = 'resto_rate' ORDER BY SEQ_IN_INDEX ASC
+
+[08-Jun-2022 23:48:24 UTC] [debug] SELECT ENGINE, AUTO_INCREMENT, TABLE_COLLATION, TABLE_COMMENT, CREATE_OPTIONS
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'doctrine_migration_versions'
+
+[08-Jun-2022 23:48:24 UTC] [debug] SELECT * FROM doctrine_migration_versions
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::logKernelException".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelException".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelException".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.exception" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onKernelException" stopped propagation of the event "kernel.exception".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+
+[08-Jun-2022 23:48:24 UTC] [info] Matched route "_wdt".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::configureLogoutUrlGenerator".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Bundle\SecurityBundle\Debug\TraceableFirewallListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleAwareListener::onKernelFinishRequest".
+
+[08-Jun-2022 23:48:24 UTC] [debug] Notified event "kernel.terminate" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelTerminate".
+

@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class RestaurantController extends AbstractController
 {
     /**
-     * @Route("/getRestaurant", name="get_list_restaurant")
+     * @Route("/getRestaurant", name="get_list_restaurant",methods={"GET","HEAD"})
      */
     public function getRestaurant():Response{
         $restaurants = $this->getDoctrine()->getRepository(Restaurant::class)->findRestaurant(); /** @var array $restaurants */
@@ -22,7 +22,7 @@ class RestaurantController extends AbstractController
     }
 
     /**
-     * @Route("/initAddRestaurant", name="init_add_restaurant")
+     * @Route("/initAddRestaurant", name="init_add_restaurant",methods={"GET","HEAD"})
      */
     public function initAddRestaurant():Response{
 
@@ -31,7 +31,7 @@ class RestaurantController extends AbstractController
     }
 
     /**
-     * @Route("/getOneRestaurant", name="get_one_restaurant")
+     * @Route("/getOneRestaurant", name="get_one_restaurant",methods={"GET","HEAD"})
      */
     public function getOneRestaurant(Request $request):Response{
         $id = $request->get('id');
@@ -42,7 +42,7 @@ class RestaurantController extends AbstractController
 
 
     /**
-     * @Route("/getNoteRestaurant", name="get_noteMoy_restaurant")
+     * @Route("/getNoteRestaurant", name="get_noteMoy_restaurant",methods={"GET","HEAD"})
      */
     public function getNoteMoyRestaurant():Response{
         $reviews = $this->getDoctrine()->getRepository(Reviews::class)->getReviews(); /** @var array $reviews */
@@ -65,7 +65,7 @@ class RestaurantController extends AbstractController
 
 
     /**
-     * @Route("/getRestaurantByCity", name="get_restaurant_by_city")
+     * @Route("/getRestaurantByCity", name="get_restaurant_by_city",methods={"GET","HEAD"})
      */
     public function getRestaurantByCity(Request $request):Response{
         $city = $request->get('city');
@@ -74,7 +74,7 @@ class RestaurantController extends AbstractController
     }
 
     /**
-     * @Route("/getRestaurantAll", name="get_all_restau")
+     * @Route("/getRestaurantAll", name="get_all_restau",methods={"GET","HEAD"})
      */
     public function getAll():Response{
         $restaurants = $this->getDoctrine()->getRepository(Restaurant::class)->findAll(); /** @var  $restaurants */
@@ -82,7 +82,7 @@ class RestaurantController extends AbstractController
     }
 
     /**
-     * @Route("/add_restau", name="add_restau")
+     * @Route("/add_restau", name="add_restau",methods={"POST"})
      */
     public function postRest(Request $request):Response{
         $data = $request->request->all();
@@ -100,7 +100,7 @@ class RestaurantController extends AbstractController
 
 
     /**
-     * @Route("/delete_restau/{id}", name="delete_restau")
+     * @Route("/delete_restau/{id}", name="delete_restau",methods={"POST"})
      */
     public function deleteRestau(int $id):Response{
         $restaurant = $this->getDoctrine()->getRepository(Restaurant::class)->find((int) $id); /** @var Restaurant $restaurant */

@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ReviewsController extends AbstractController
 {
     /**
-     * @Route("/initReviews/{idR}", name="add_review_init")
+     * @Route("/initReviews/{idR}", name="add_review_init",methods={"GET"})
      */
     public function initReviews($idR):Response{
         $restaurant = $this->getDoctrine()->getRepository(Restaurant::class)->find($idR); /** @var Restaurant $restaurant */
@@ -22,7 +22,7 @@ class ReviewsController extends AbstractController
     }
 
     /**
-     * @Route("/delete_reviews/{idRV}", name="delete_reviews")
+     * @Route("/delete_reviews/{idRV}", name="delete_reviews",methods={"POST"})
      */
     public function deleteReviews($idRV):Response{
         $em = $this->getDoctrine()->getManager();
@@ -34,7 +34,7 @@ class ReviewsController extends AbstractController
     }
 
     /**
-     * @Route("/addReview", name="add_reviews")
+     * @Route("/addReview", name="add_reviews",methods={"POST"})
      */
     public function addReviews(Request $request):Response{
         $data = $request->request->all();

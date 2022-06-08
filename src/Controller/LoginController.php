@@ -12,8 +12,11 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 class LoginController extends AbstractController
 {
 
-    public function getLogin():Response{
-        return $this->render('user/login.html.twig');
+    /**
+     * @Route("/initAdd", name="init_add")
+     */
+    public function initAddUser():Response{
+        return $this->render('user/addUser.html.twig');
 
     }
 
@@ -49,12 +52,25 @@ class LoginController extends AbstractController
 
 
     /**
-     * @Route("/adduser", name="add_user")
+     * @Route("/adduser", name="add_user",methods={"POST"})
      */
     public function addUser(Request $request){
         $data = $request->request->all();
-        dd($data);
-        return $this->render('user/NotFound.html.twig');
+        $user = $this->getDoctrine()->getRepository(User::class)->findOneBy(['email'=>$data['email']]); /** @var User $user */
+        if($user){
+            throw new \Exception('Email Exist '.$data['email']);
+        }
+        $em = $this->getDoctrine()->getManager();
+        $user = new User();
+        $user->setUserName($data['username'])
+            ->setEmail($data['email'])
+            ->setPassword($data['password'])
+            ->setCreateAt(new \DateTime())
+            ->setUpdateAt(new \DateTime())
+            ->setRoles((array)$data['role']);
+        $em->persist($user);
+        $em->flush();
+        return $this->render('user/login.html.twig');
     }
 
 
