@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\City;
 use App\Entity\Restaurant;
 use App\Entity\Reviews;
 use App\Entity\User;
@@ -21,12 +22,22 @@ class RestaurantController extends AbstractController
     }
 
     /**
+     * @Route("/initAddRestaurant", name="init_add_restaurant")
+     */
+    public function initAddRestaurant():Response{
+
+        $city = $this->getDoctrine()->getRepository(City::class)->findAll(); /** @var $city City  */
+        return $this->render('restaurants/addRestaurant.html.twig',['cityAll'=>$city]);
+    }
+
+    /**
      * @Route("/getOneRestaurant", name="get_one_restaurant")
      */
     public function getOneRestaurant(Request $request):Response{
         $id = $request->get('id');
         $restaurant = $this->getDoctrine()->getRepository(Restaurant::class)->find($id); /** @var Restaurant $restaurant */
-        return $this->render('restaurants/detailRestaurant.html.twig',['restaurant'=>$restaurant]);
+        $reviews = $this->getDoctrine()->getRepository(Reviews::class)->findBy(['resraurantId'=>$id]); /** @var Reviews $reviews */
+        return $this->render('restaurants/detailRestaurant.html.twig',['restaurant'=>$restaurant,'reviews'=>$reviews]);
     }
 
 
@@ -68,6 +79,35 @@ class RestaurantController extends AbstractController
     public function getAll():Response{
         $restaurants = $this->getDoctrine()->getRepository(Restaurant::class)->findAll(); /** @var  $restaurants */
         return $this->render('restaurants/listRestaurants.html.twig',['restaurants'=>$restaurants]);
+    }
+
+    /**
+     * @Route("/add_restau", name="add_restau")
+     */
+    public function postRest(Request $request):Response{
+        $data = $request->request->all();
+        $em = $this->getDoctrine()->getManager();
+        $restaurant = new Restaurant();
+        $restaurant->setRestaurantName($data['name'])
+            ->setUpdateAt(new \DateTime())
+            ->setCreateAt(new \DateTime())
+            ->setCityId($em->getReference(City::class, (int) $data['city']))
+            ->setUserId($em->getReference(User::class, (int) 1)); // il faut affecter l'utilisateur connecter
+        $em->persist($restaurant);
+        $em->flush();
+        return $this->redirectToRoute('get_all_restau');
+    }
+
+
+    /**
+     * @Route("/delete_restau/{id}", name="delete_restau")
+     */
+    public function deleteRestau(int $id):Response{
+        $restaurant = $this->getDoctrine()->getRepository(Restaurant::class)->find((int) $id); /** @var Restaurant $restaurant */
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($restaurant);
+        $em->flush();
+        return $this->redirectToRoute('get_all_restau');
     }
 
 }

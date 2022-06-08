@@ -21,6 +21,9 @@
                     <td> {{ restaurant.updateAt.date|date("m/d/Y") }}</td>
                     <td>{{ restaurant.cityId.cityName }}</td>
                     <td> {{ restaurant.userId.username }}</td>
+                    <td>
+                        <a href="{{ path('delete_restau',{id: restaurant.restaurantId}) }}"> delete </a>
+                    </td>
                 </tr>
             {% endfor %}
         </table>

@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Restaurant
  *
- * @ORM\Table(name="restaurant", indexes={@ORM\Index(name="user_id", columns={"user_id"}), @ORM\Index(name="city_id", columns={"city_id"})})
+ * @ORM\Table(name="restaurant")
  * @ORM\Entity(repositoryClass=RestaurantRepository::class)
  */
 class Restaurant
@@ -47,7 +47,7 @@ class Restaurant
      *
      * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="user_id", referencedColumnName="user_id")
+     *   @ORM\JoinColumn(name="id", referencedColumnName="id")
      * })
      */
     private $userId;

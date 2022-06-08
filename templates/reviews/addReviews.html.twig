@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> ajouter reviews </h1>
+    <div>
+        <form action="{{ path('add_reviews') }}" method="post">
+            <span><b>Message : </b> <textarea cols="10" rows="2" id="message" name="message" type="text"></textarea></span><br>
+            <span><b>note : </b> <input id="note" name="note" type="number" min="0" max="10"/> /10</span><br>
+             <input id="restaurant" name="restaurant" value="{{ restaurant.restaurantId }}" type="hidden"/>
+            <span><b>Restaurant Name : </b> {{ restaurant.restaurantName }}</span><br>
+            <button type="submit">add</button>
+        </form>
+    </div>
+{% endblock %}

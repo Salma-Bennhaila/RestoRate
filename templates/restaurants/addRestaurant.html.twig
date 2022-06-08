@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> ajouter une restaurant </h1>
+    <div>
+        <form action="{{ path('add_restau') }}" method="post">
+            <span><b>Name : </b> <input id="name" name="name" type="text"/></span><br>
+            <span><b>City : </b>  <select id="city" name="city">
+                    {% for city in cityAll %}
+                        <option value="{{ city.cityId }}">{{ city.cityName }}</option>
+                    {% endfor %}
+                </select>
+            </span><br>
+            <button type="submit">add</button>
+
+        </form>
+    </div>
+{% endblock %}

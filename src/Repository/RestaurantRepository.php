@@ -20,7 +20,7 @@ class RestaurantRepository extends ServiceEntityRepository
     public function findRestaurant(): array
     {
         $query =  $this->createQueryBuilder('R')
-            ->orderBy('R.createAt','ASC')
+            ->orderBy('R.createAt','DESC')
             ->setMaxResults(10)
             ->getQuery()
             ->getResult()

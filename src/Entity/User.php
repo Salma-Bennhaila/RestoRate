@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * User
@@ -10,51 +12,36 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="user")
  * @ORM\Entity
  */
-class User
+class User implements UserInterface
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="user_id", type="integer", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\Column(type="integer")
      */
-    private $userId;
+    private $id;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="user_last_name", type="string", length=256, nullable=false)
+     * @ORM\Column(type="string", length=180, unique=true)
      */
-    private $userLastName;
+    private $email;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="user_first_name", type="string", length=256, nullable=false)
+     * @ORM\Column(type="string", length=180)
      */
-    private $userFirstName;
+    private $userName;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="username", type="string", length=256, nullable=false)
+     * @ORM\Column(type="json")
      */
-    private $username;
+    private $roles = [];
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="user_password", type="string", length=256, nullable=false)
+     * @var string The hashed password
+     * @ORM\Column(type="string")
      */
-    private $userPassword;
+    private $password;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="user_role", type="string", length=256, nullable=false)
-     */
-    private $userRole;
 
     /**
      * @var \DateTime
@@ -63,80 +50,143 @@ class User
      */
     private $createAt;
 
-    public function getUserId(): ?int
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="update_at", type="date", nullable=false)
+     */
+    private $updateAt;
+
+    public function getId(): int
     {
-        return $this->userId;
+        return $this->id;
     }
 
-    public function getUserLastName(): ?string
+    public function getEmail(): ?string
     {
-        return $this->userLastName;
+        return $this->email;
     }
 
-    public function setUserLastName(string $userLastName): self
+    public function setEmail(string $email): self
     {
-        $this->userLastName = $userLastName;
+        $this->email = $email;
 
         return $this;
     }
 
-    public function getUserFirstName(): ?string
+    /**
+     * The public representation of the user (e.g. a username, an email address, etc.)
+     *
+     * @see UserInterface
+     */
+    public function getUserIdentifier(): string
     {
-        return $this->userFirstName;
+        return (string) $this->email;
     }
 
-    public function setUserFirstName(string $userFirstName): self
+    /**
+     * @see UserInterface
+     */
+    public function getRoles(): array
     {
-        $this->userFirstName = $userFirstName;
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'ROLE_USER';
+
+        return array_unique($roles);
+    }
+
+    public function setRoles(array $roles): self
+    {
+        $this->roles = $roles;
 
         return $this;
     }
 
-    public function getUsername(): ?string
+    /**
+     * @see PasswordAuthenticatedUserInterface
+     */
+    public function getPassword(): string
     {
-        return $this->username;
+        return $this->password;
     }
 
-    public function setUsername(string $username): self
+    public function setPassword(string $password): self
     {
-        $this->username = $username;
+        $this->password = $password;
 
         return $this;
     }
 
-    public function getUserPassword(): ?string
+    /**
+     * Returning a salt is only needed, if you are not using a modern
+     * hashing algorithm (e.g. bcrypt or sodium) in your security.yaml.
+     *
+     * @see UserInterface
+     */
+    public function getSalt(): ?string
     {
-        return $this->userPassword;
+        return null;
     }
 
-    public function setUserPassword(string $userPassword): self
+    /**
+     * @see UserInterface
+     */
+    public function eraseCredentials()
     {
-        $this->userPassword = $userPassword;
+        // If you store any temporary, sensitive data on the user, clear it here
+        // $this->plainPassword = null;
+    }
 
+    public function getUsername()
+    {
+        return $this->userName;
+    }
+
+    /**
+     * @param mixed $userName
+     * @return User
+     */
+    public function setUserName($userName)
+    {
+        $this->userName = $userName;
         return $this;
     }
 
-    public function getUserRole(): ?string
-    {
-        return $this->userRole;
-    }
 
-    public function setUserRole(string $userRole): self
-    {
-        $this->userRole = $userRole;
-
-        return $this;
-    }
-
-    public function getCreateAt(): ?\DateTimeInterface
+    /**
+     * @return \DateTime
+     */
+    public function getCreateAt(): \DateTime
     {
         return $this->createAt;
     }
 
-    public function setCreateAt(\DateTimeInterface $createAt): self
+    /**
+     * @param \DateTime $createAt
+     * @return User
+     */
+    public function setCreateAt(\DateTime $createAt): User
     {
         $this->createAt = $createAt;
+        return $this;
+    }
 
+    /**
+     * @return \DateTime
+     */
+    public function getUpdateAt(): \DateTime
+    {
+        return $this->updateAt;
+    }
+
+    /**
+     * @param \DateTime $updateAt
+     * @return User
+     */
+    public function setUpdateAt(\DateTime $updateAt): User
+    {
+        $this->updateAt = $updateAt;
         return $this;
     }
 

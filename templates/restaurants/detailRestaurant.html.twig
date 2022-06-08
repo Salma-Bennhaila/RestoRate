@@ -2,6 +2,7 @@
 
 {% block body %}
     <h1> Details de restaurant {{ restaurant.restaurantName }}  </h1>
+    <a href="{{ path('add_review_init',{idR: restaurant.restaurantId}) }}"><b> add reviews </b></a>
     <div>
         <span><b>id : </b> {{ restaurant.restaurantId }}</span><br>
         <span><b>Name : </b> {{ restaurant.restaurantName }}</span><br>
@@ -10,4 +11,15 @@
         <span><b>City : </b> {{ restaurant.cityId.cityName }}</span><br>
         <span><b>userName : </b> {{ restaurant.userId.username }}</span><br>
     </div>
+
+    <h1> list reviews</h1>
+    {% for review in reviews %}
+        <div style=" display: flex;">
+            <span style="margin-left: 10px"><b>{{ review.userId.username }} </b> </span> :
+            <span style="margin-left: 10px"> {{ review.message }}</span>
+            <span style="margin-left: 10px"><b> {{ review.note }} / 10 </b></span><br>
+            <a href="{{ path('delete_reviews',{idRV: review.reviewsId}) }}" style="margin-left: 10px"><b> remove reviews </b></a>
+            </br>
+        </div>
+    {% endfor %}
 {% endblock %}

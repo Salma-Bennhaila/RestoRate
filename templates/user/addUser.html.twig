@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1> ajouter un user (client / restaurateur) </h1>
+    <div>
+        <form action="{{ path('add_user') }}" method="post">
+            <span><b>Name : </b> <input id="name" name="name" type="text"/></span><br>
+            <span><b>UserName : </b> <input id="username" name="username" type="text"/></span><br>
+            <span><b>Email : </b> <input id="email" name="email" type="email"/></span><br>
+            <span><b>password : </b> <input id="password" name="password" type="password"/></span><br>
+            <span><b>role : </b>  <select id="role" name="role">
+                        <option value="ROLE_RESTAURANT">ROLE RESTAURATEUR</option>
+                        <option value="ROLE_CLIENT">ROLE CLIENT</option>
+                </select>
+            </span><br>
+            <button type="submit">add</button>
+
+        </form>
+    </div>
+{% endblock %}
